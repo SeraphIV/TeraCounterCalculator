@@ -34,11 +34,13 @@ $(document).ready(function () {
   }
 
   counterWeakness(types[0]);
+
+  $("#type").on("change", function () {
+    counterWeakness(this.value);
+  });
 });
 
-$("#type").on("change", function () {
-  counterWeakness(this.value);
-});
+
 
 const types = [
   "Normal",
