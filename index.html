@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="src/index.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="src/styles.css" />
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body class="py-4">
+    <main>
+      <div class="container">
+        <h1>Pokemon Tera Counter Calculator</h1>
+        <p class="lead">
+          This tool will suggest a tera type for a pokemon based on it's typing.
+        </p>
+        <p>
+          It will find the types that you're weak against and suggest types that
+          cover that weakness. (ex: Normal is weak to Fighting, Fighting is weak
+          to Flying/Psychic/Fairy, so the tool will suggest those three)
+        </p>
+        <p>
+          If your weaknesses are covered by a single type multiple times, the
+          count will be listed as well. (ex: Dragon is weak to Ice/Fairy and
+          those are both weak to Steel, so the tool will note that Steel covers
+          2 weaknesses)
+        </p>
+        <h3>Select your type:</h3>
+        <p>
+          <select id="type"></select>
+        </p>
+        <h3>Recommended counter-types:</h3>
+        <p id="counters">FLORP</p>
+      </div>
+    </main>
+  </body>
+</html>
